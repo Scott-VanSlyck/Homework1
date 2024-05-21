@@ -1,0 +1,42 @@
+---
+title: "Data Science"
+format: html
+editor: visual
+---
+
+# What do you think being a data scientist is about?
+
+I think being a data scientist is about 2 main things, firstly being able to understand modeling techniques and data analysis in order to analyze a dataset in order to understand it fully. Secondly, I believe it is about communication and the ability to make complex data easy to understand for others.
+
+# What differences/similarities do you see between data scientists and statisticians?
+
+I believe that statisticians tend to focus more on the theory and interpretation of data while data scientists have to focus on more of the advanced modeling techniques and more complex algorithms. However both need to be sharp on data analysis and being able to interpret the data and then explain it to someone in an easy to understand format.
+
+# How do you view yourself in relation to these two areas?
+
+I view myself to be a blend of both. In undergrad I majored in statistics but the main reason I was pulled into that field was my passion for data science. In my free time I would spend a lot of time studying data science and machine learning whilst learning about more of the statistical theory and interpretation through my schooling.
+
+## R code
+
+We are looking at analyzing the "iris" dataset from r,
+
+firstly we will be looking at the density of the "Sepal.Length" variable from the "iris" dataset.
+
+```{r}
+y = density(iris$Sepal.Length)
+```
+
+Next, we will be looking at the class, type, and structure of this variable y we created.
+
+```{r}
+class(y)
+typeof(y)
+str(y)
+```
+
+
+
+```{r}
+#| echo: false
+plot(y, main = "Density of Sepal Length")
+```
